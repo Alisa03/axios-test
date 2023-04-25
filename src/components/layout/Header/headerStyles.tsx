@@ -6,11 +6,16 @@ import { List } from "../../../assets/styled/components";
 export const Headers = styled.header`
     width: 80%;
     margin: 0 auto;
-    padding: 15px 0
+    padding: 10px 0;
+    
+    @media ${base.media.tablet} {
+        width 90%;
+    }
 `
 
 export const HeaderList = styled(List)`
     width: 100%;
+    margin: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;

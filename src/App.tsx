@@ -12,6 +12,7 @@ import Header from "./components/layout/Header";
 import GlobalStyled from "./assets/styled/globalStyled";
 import { AppContainer } from './assets/styled/AppStyles';
 import { light, dark } from './assets/styled/theme';
+import { Container } from './assets/styled/components';
 
 function App() {
   const [users, setUsers] = useState<any[]>([])
@@ -55,10 +56,12 @@ function App() {
             onClick={themeToggler}
             theme={theme}
           />
-          <AppRouter
-            userList={users}
-            postList={post}
-          />
+          <Container>
+            <AppRouter
+              userList={users}
+              postList={post}
+            />
+          </Container>
         </Router>
       </AppContainer>
     </ThemeProvider>

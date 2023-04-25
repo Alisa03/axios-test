@@ -12,7 +12,7 @@ export default function AppRouter({ userList, postList }: any) {
             {
                 userList.map((pages: any) =>
                     <Route key={pages.id}
-                        path={`${USER_ROUTE}${pages.username}`}
+                        path={`${USER_ROUTE}/${pages.username}`}
                         element={
                             <User user={pages}
                                 postList={

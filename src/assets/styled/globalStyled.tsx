@@ -23,5 +23,4 @@ export default createGlobalStyle`
     li {list-style: none}
     img {object-fit: cover}
 
-    html{background: ${(props) => props.theme.color.fonColors};}
 `

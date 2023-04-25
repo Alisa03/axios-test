@@ -31,5 +31,8 @@ export const base = {
     radius: {
         px13: '13px',
         px10: '10px'
+    },
+    media: {
+        tablet: '(max-width: 770px)',
     }
 }

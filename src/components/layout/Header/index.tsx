@@ -2,13 +2,13 @@ import { Link } from 'react-router-dom'
 
 import logo from '../../../assets/img/Logo.svg'
 
-import { Button, Container, UserLink } from '../../../assets/styled/components'
-import { HeaderList, Logo, Nav } from './headerStyles'
+import { Button, UserLink } from '../../../assets/styled/components'
+import { HeaderList, Headers, Logo, Nav } from './headerStyles'
 
 export default function Header({ onClick, theme }: any) {
 
     return (
-        <Container>
+        <Headers>
             <HeaderList>
                 <Link to='/'>
                     <Logo>
@@ -27,6 +27,6 @@ export default function Header({ onClick, theme }: any) {
                     </Button>
                 </Nav>
             </HeaderList>
-        </Container>
+        </Headers>
     )
 }

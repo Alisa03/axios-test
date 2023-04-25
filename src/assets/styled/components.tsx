@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { Link } from 'react-router-dom'
 
 import { base } from "./theme";
@@ -6,6 +6,10 @@ import { base } from "./theme";
 export const Container = styled.div`
     width: 80%;
     margin: 0 auto;
+
+    @media ${base.media.tablet} {
+        width: 100%
+    }
 `
 
 export const List = styled.div`
@@ -14,6 +18,10 @@ export const List = styled.div`
     padding: 5px 20px;
     margin: 25px auto;
     width: 45%;
+
+    @media ${base.media.tablet} {
+        width: 90%
+    }
 `
 
 export const Content = styled.div`
