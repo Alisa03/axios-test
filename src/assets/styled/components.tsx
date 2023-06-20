@@ -16,12 +16,12 @@ export const AppContainer = styled.div`
     background: ${(props) => props.theme.color.fonColors};
     
     height: 100%;
+    min-height: 100vh;
     padding-bottom: 25px;
 
     color: ${(props) => props.theme.color.textColors};
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-sizing: 15px;
-
 `
 
 export const List = styled.div`
