@@ -1,5 +1,3 @@
-import React from "react";
-
 export const light = {
     color: {
         baseColors: '#FD5690',
